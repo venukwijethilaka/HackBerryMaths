@@ -14,9 +14,15 @@ export function Navbar() {
         
         {/* LEFT SECTION: Logo & Name Only */}
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="relative h-10 w-10 overflow-hidden rounded-full  group-hover:border-purple-500/50 transition-colors">
-            <Image src="/HBMlogo.svg" alt="Maths Yaka Logo" fill sizes="200px" className="object-cover" />
-          </div>
+          <div className="relative h-10 w-10 overflow-hidden  group-hover:border-purple-500/50 transition-colors">
+  <Image 
+      src="/HBMlogo.svg" 
+      alt="Maths Yaka Logo" 
+      fill 
+      sizes="40px" 
+      className="object-contain scale-450" // Changed to object-contain and added scale
+    />
+  </div>
           <span className="text-xl font-bold tracking-wide text-white">
             HackBerry <span className="text-purple-400">Maths</span>
           </span>

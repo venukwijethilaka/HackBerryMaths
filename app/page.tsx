@@ -46,7 +46,7 @@ export default function Home() {
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 text-center">
             <h2 className="text-3xl font-bold md:text-5xl mb-4">
-              <span className="text-purple-400">Area of a Cylinder</span>
+              <span className="text-purple-400">Introduction</span>
             </h2>
             <p className="text-gray-400">Experience our high-quality 3D explanation.</p>
           </div>
