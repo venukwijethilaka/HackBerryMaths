@@ -58,7 +58,15 @@ export default function Home() {
             className="relative overflow-hidden rounded-2xl border border-white/20 bg-space-dark shadow-2xl"
           >
             <div className="aspect-video w-full h-160 bg-black relative flex items-center justify-center group">
-              <iframe src="https://player.vimeo.com/video/1149781376?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="IntroVideo"></iframe>
+              <iframe 
+                src="https://player.vimeo.com/video/1149781376?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+                width="1920" 
+                height="1080" 
+                frameBorder="0" 
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                referrerPolicy="strict-origin-when-cross-origin" 
+                title="IntroVideo"
+              ></iframe>
             </div>
             
             <div className="border-t border-white/10 bg-white/5 p-4 flex items-center justify-between">
@@ -144,7 +152,6 @@ export default function Home() {
             Let's discuss how we can bring your mathematical curriculum to life with 3D animation.
           </p>
           
-          {/* UPDATED: Changed from <a> mailto to <Link> for the contact page */}
           <Link 
             href="/contact" 
             className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-3 text-lg font-bold text-black transition-all hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.3)]"
