@@ -26,7 +26,7 @@ export default function Home() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative flex min-h-screen flex-col items-center justify-center px-6 pt-20 overflow-hidden">
+      <section className="relative flex min-h-screen flex-col items-center justify-center px-6 pt:10 md:pt-20 overflow-hidden">
         <motion.div style={{ y: yHero, opacity: opacityHero }} className="relative z-10 mx-auto max-w-5xl text-center">
           <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-purple-500/30 bg-purple-500/10 px-4 py-1.5 text-sm font-medium text-purple-300 backdrop-blur-md">
             <span className="relative flex h-3 w-3"><span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span><span className="relative inline-flex rounded-full h-3 w-3 bg-purple-500"></span></span>
