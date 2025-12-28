@@ -106,7 +106,7 @@ export default function Home() {
                 <span className="text-cyan-400">Complex Concepts</span>
               </h2>
               <p className="mb-8 text-lg text-gray-300 leading-relaxed">
-                Maths Yaka is a premium service creating bespoke 3D math video solutions. 
+                This is a premium service creating bespoke 3D math video solutions. 
                 Whether you are an educational institute or a content creator, we build 
                 the "Math Magic" for you.
               </p>
