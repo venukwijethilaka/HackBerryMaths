@@ -173,7 +173,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="relative z-10 w-full border-t mt-10 sm:mt-0 border-white/10 bg-space-dark/80 py-6 text-center text-sm text-gray-500 backdrop-blur-md">
+      <footer className="relative z-10 w-full border-t mt-10 border-white/10 bg-space-dark/80 py-6 text-center text-sm text-gray-500 backdrop-blur-md">
         <p>© 2025 Maths Yaka. All rights reserved.</p>
       </footer>
     </div>
