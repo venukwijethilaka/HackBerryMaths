@@ -68,24 +68,25 @@ export default function Home() {
         ></iframe>
       </div>
       
-      {/* Video Info Bar */}
       <div className="border-t border-white/10 bg-white/5 p-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
               <div className="h-2 w-2 rounded-full bg-red-500 animate-pulse" />
               <span className="text-sm font-medium text-gray-300">Live Preview</span>
           </div>
-
-          {/* Mobile Only Button */}
-          <Link
-            href="/collection"
-            className="flex md:hidden items-center gap-2 rounded-full border border-purple-500/30 bg-gradient-to-r from-orange-500 to-pink-600 px-5 py-2 text-xs font-bold text-white shadow-[0_0_15px_rgba(249,115,22,0.3)] transition-all active:scale-95"
-          >
-            More Videos
-          </Link>
-
-          <div className="hidden md:block text-sm text-gray-500">HD 1080p</div>
+          <div className="text-sm text-gray-500">HD 1080p</div>
       </div>
     </motion.div>
+
+    {/* Mobile Only Button - Placed Under the Container */}
+    <div className="mt-8 flex justify-center md:hidden">
+      <Link
+        href="/collection"
+        className="flex items-center gap-2 rounded-full border border-purple-500/30 bg-gradient-to-r from-orange-500 to-pink-600 px-8 py-4 text-base font-bold text-white shadow-[0_0_20px_rgba(249,115,22,0.4)] transition-all active:scale-95"
+      >
+        View Full Collection
+      </Link>
+    </div>
+
   </div>
 </section>
 
@@ -172,7 +173,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="relative z-10 w-full border-t border-white/10 bg-space-dark/80 py-6 text-center text-sm text-gray-500 backdrop-blur-md">
+      <footer className="relative z-10 w-full border-t mt-10 sm:mt-0 border-white/10 bg-space-dark/80 py-6 text-center text-sm text-gray-500 backdrop-blur-md">
         <p>© 2025 Maths Yaka. All rights reserved.</p>
       </footer>
     </div>
