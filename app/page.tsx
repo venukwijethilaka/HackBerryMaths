@@ -42,42 +42,52 @@ export default function Home() {
 
 
       {/* Section 2: Video Player */}
-      <section id="demo-section" className="relative z-10 px-6 py-15  md:py-32">
-        <div className="mx-auto max-w-6xl">
-          <div className="mb-12 text-center">
-            <h2 className="text-3xl font-bold md:text-5xl mb-4">
-              <span className="text-purple-400">Introduction</span>
-            </h2>
-            <p className="text-gray-400">Experience our high-quality 3D explanation.</p>
+<section id="demo-section" className="relative z-10 px-6 py-15 md:py-32">
+  <div className="mx-auto max-w-6xl">
+    <div className="mb-12 text-center">
+      <h2 className="text-3xl font-bold md:text-5xl mb-4">
+        <span className="text-purple-400">Introduction</span>
+      </h2>
+      <p className="text-gray-400">Experience our high-quality 3D explanation.</p>
+    </div>
+
+    <motion.div 
+      initial={{ opacity: 0, scale: 0.95 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      viewport={{ once: true }}
+      className="relative overflow-hidden rounded-2xl border border-white/20 bg-space-dark shadow-2xl"
+    >
+      <div className="relative w-full md:h-4/6 aspect-video bg-black overflow-hidden shadow-2xl">
+        <iframe 
+          src="https://player.vimeo.com/video/1149781376?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"  
+          className="absolute top-0 left-0 w-full h-full"
+          frameBorder="0" 
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+          referrerPolicy="strict-origin-when-cross-origin" 
+          title="IntroVideo"
+        ></iframe>
+      </div>
+      
+      {/* Video Info Bar */}
+      <div className="border-t border-white/10 bg-white/5 p-4 flex items-center justify-between">
+          <div className="flex items-center gap-2">
+              <div className="h-2 w-2 rounded-full bg-red-500 animate-pulse" />
+              <span className="text-sm font-medium text-gray-300">Live Preview</span>
           </div>
 
-          <motion.div 
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            className="relative overflow-hidden rounded-2xl border border-white/20 bg-space-dark shadow-2xl"
+          {/* Mobile Only Button */}
+          <Link
+            href="/collection"
+            className="flex md:hidden items-center gap-2 rounded-full border border-purple-500/30 bg-gradient-to-r from-orange-500 to-pink-600 px-5 py-2 text-xs font-bold text-white shadow-[0_0_15px_rgba(249,115,22,0.3)] transition-all active:scale-95"
           >
-            <div className="relative w-full md:h-4/6 aspect-video bg-black overflow-hidden shadow-2xl">
-              <iframe 
-                src="https://player.vimeo.com/video/1149781376?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"  
-                className="absolute top-0 left-0 w-full h-full"
-                frameBorder="0" 
-                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
-                referrerPolicy="strict-origin-when-cross-origin" 
-                title="IntroVideo"
-              ></iframe>
-            </div>
-            
-            <div className="border-t border-white/10 bg-white/5 p-4 flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                    <div className="h-2 w-2 rounded-full bg-red-500 animate-pulse" />
-                    <span className="text-sm font-medium text-gray-300">Live Preview</span>
-                </div>
-                <div className="text-sm text-gray-500">HD 1080p</div>
-            </div>
-          </motion.div>
-        </div>
-      </section>
+            More Videos
+          </Link>
+
+          <div className="hidden md:block text-sm text-gray-500">HD 1080p</div>
+      </div>
+    </motion.div>
+  </div>
+</section>
 
       {/* Section 3: Our Service */}
       <section className="relative z-10 overflow-hidden py-32">
@@ -134,7 +144,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="relative z-10 px-6 pt-20 pb-10 text-center">
+      <section className="relative z-10 px-6 pt-0 sm:pt-20 pb-10 text-center">
         <motion.div 
           initial={{ opacity: 0, y: 40 }} 
           whileInView={{ opacity: 1, y: 0 }} 
