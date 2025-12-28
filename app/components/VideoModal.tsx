@@ -23,7 +23,7 @@ export const VideoModal: React.FC<VideoModalProps> = ({ videoUrl, isOpen, onClos
             initial={{ scale: 0.95 }}
             animate={{ scale: 1 }}
             exit={{ scale: 0.95 }}
-            className="relative w-full max-w-4xl rounded-2xl overflow-hidden bg-black"
+            className="relative w-full max-w-4xl rounded-2xl overflow-hidden bg-black border-gray-700 border-1"
           >
             <iframe
               src={videoUrl}

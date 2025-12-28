@@ -42,7 +42,7 @@ export default function Home() {
 
 
       {/* Section 2: Video Player */}
-      <section id="demo-section" className="relative z-10 px-6 py-32">
+      <section id="demo-section" className="relative z-10 px-6 py-15  md:py-32">
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 text-center">
             <h2 className="text-3xl font-bold md:text-5xl mb-4">
@@ -57,11 +57,10 @@ export default function Home() {
             viewport={{ once: true }}
             className="relative overflow-hidden rounded-2xl border border-white/20 bg-space-dark shadow-2xl"
           >
-            <div className="aspect-video w-full h-160 bg-black relative flex items-center justify-center group">
+            <div className="relative w-full md:h-4/6 aspect-video bg-black overflow-hidden shadow-2xl">
               <iframe 
-                src="https://player.vimeo.com/video/1149781376?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
-                width="1920" 
-                height="1080" 
+                src="https://player.vimeo.com/video/1149781376?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"  
+                className="absolute top-0 left-0 w-full h-full"
                 frameBorder="0" 
                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
                 referrerPolicy="strict-origin-when-cross-origin" 
